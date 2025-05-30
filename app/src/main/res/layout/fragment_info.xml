@@ -166,6 +166,7 @@
                     android:id="@+id/facebookbutton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/fblogo"
                     android:background="@drawable/roundbg" />
 
@@ -191,6 +192,7 @@
                     android:id="@+id/instabutton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/instalogo"
                     android:background="@drawable/roundbg" />
 
@@ -216,6 +218,7 @@
                     android:id="@+id/discordbutton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/discordlogo"
                     android:background="@drawable/roundbg" />
 
@@ -278,6 +281,7 @@
                     android:id="@+id/emailbutton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/gmaillogo"
                     android:background="@drawable/roundbg" />
 

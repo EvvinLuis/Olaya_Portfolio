@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@android:color/white">
+
+        <!-- Circle ImageView -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/vinpic"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:textColor="@color/black"
+            android:text="Evvin Luis Layco Olaya"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/heavitas"
+            android:background="@drawable/roundbg"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/merge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundbg"
+            android:padding="10dp"
+            android:clipToPadding="true">
+
+            <!-- Address TextView -->
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age: 21 \nSex: Male \nNationality: Filipino \n\nPermanent Address \nBlk50 Lot18 Bella Vita Halayhayin Pililla, Rizal"
+                android:textColor="@color/black"
+                android:background="@android:color/white"
+                android:padding="10dp" />
+
+            <!-- Fragment positioned below the TextView -->
+            <fragment
+                android:id="@+id/id_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/addressTextView"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <!-- First education TextView -->
+        <TextView
+            android:id="@+id/educationTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/merge"
+            android:text="Educational Attainment"
+            android:gravity="center"
+            android:fontFamily="@font/heavitas"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbg"
+            android:padding="10dp" />
+
+        <!-- Second education TextView -->
+        <TextView
+            android:id="@+id/educationTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/educationTextView1"
+            android:text="Tertiary \nUniversity of Rizal System \nMorong Campus \nBacherlor of Science in Computer Engineering \n2021-2025"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundbg"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/educationTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/educationTextView2"
+            android:text="Senior High School \nTomas Claudio Colleges \nMorong \nInformation and Communication Technology \n2019-2021"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundbg"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/educationTextView3"
+            android:text="Skills"
+            android:gravity="center"
+            android:fontFamily="@font/heavitas"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbg"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/skillstext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skills"
+            android:text="Android Studio with JAVA \nVB.net \nAI Computer Vision with PYTHON \nHTML and CSS \nKotlin"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundbg"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/socmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET IN TOUCH!"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_below="@id/skillstext"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/heavitas"
+            android:background="@drawable/roundbg"
+            android:padding="10dp" />
+
+        <GridLayout
+            android:id="@+id/firstgrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/socmed"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/facebookbutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/fblogo"
+                    android:background="@drawable/roundbg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/instabutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/instalogo"
+                    android:background="@drawable/roundbg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/discordbutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/discordlogo"
+                    android:background="@drawable/roundbg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discord"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/secgrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstgrid"
+            android:layout_marginTop="20dp"
+            android:columnCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/viberbutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/viberlogo"
+                    android:background="@drawable/roundbg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viber"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/emailbutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/gmaillogo"
+                    android:background="@drawable/roundbg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/LinkedIn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/linkedinlogo"
+                    android:background="@drawable/roundbg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LinkedIn"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+        </GridLayout>
+    </RelativeLayout>
+</ScrollView>

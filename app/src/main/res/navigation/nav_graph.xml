@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="Nav Graph">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.olayaportfolio.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Info Fragment -->
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.olayaportfolio.InfoFragment"
+        android:label="InfoFragment"
+        tools:layout="@layout/fragment_info" />
+
+    <!-- Certificates Fragment -->
+    <fragment
+        android:id="@+id/certFragment"
+        android:name="com.example.olayaportfolio.CertFragment"
+        android:label="CertFragment"
+        tools:layout="@layout/fragment_cert" />
+
+</navigation>

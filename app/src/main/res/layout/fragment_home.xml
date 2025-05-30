@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/vinpic"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hello World!"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:fontFamily="@font/okemo"/>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="I'm Evvin Luis Olaya, Mobile Application Developer from Philippines"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="I'm a Computer Engineer with Experience in Software Development."
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/kmbutton"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Know More!"
+            android:background="@drawable/btnframe"
+            android:textColor="@color/white"
+            android:fontFamily="@font/heavitas"
+            android:layout_marginTop="50dp"
+            android:elevation="4dp"
+            android:translationZ="4dp"/>
+    </LinearLayout>
+
+</ScrollView>

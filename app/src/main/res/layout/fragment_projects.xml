@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".ProjectsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hahahdhsdhhddhhsh"
+        android:text="Porjects"
         android:padding="140dp"
         android:layout_marginTop="200dp"/>
 

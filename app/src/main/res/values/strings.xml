@@ -5,5 +5,19 @@
     <string name="close_nav">Close Navigation Drawer</string>
     <string name="projtxt">Projects</string>
 
-
+    //fragment Info Strings
+    <string name="name">Evvin Luis Layco Olaya</string>
+    <string name="info">Age: 21 \nSex: Male \nNationality: Filipino \n\nPermanent Address \nBlk50 Lot18 Bella Vita Halayhayin Pililla, Rizal</string>
+    <string name="educ">Educational Attainment</string>
+    <string name="college">Tertiary \nUniversity of Rizal System \nMorong Campus \nBacherlor of Science in Computer Engineering \n2021-2025</string>
+    <string name="shs">Senior High School \nTomas Claudio Colleges \nMorong \nInformation and Communication Technology \n2019-2021</string>
+    <string name="skills">Skills</string>
+    <string name="skilllist">Android Studio with JAVA \nVB.net \nAI Computer Vision with PYTHON \nHTML and CSS \nKotlin</string>
+    <string name="getintouch">GET IN TOUCH!</string>
+    <string name="fb">Facebook</string>
+    <string name="insta">Instagram</string>
+    <string name="dc">Discord</string>
+    <string name="viber">Viber</string>
+    <string name="email">Email</string>
+    <string name="linkedin">LinkedIn</string>
 </resources>
